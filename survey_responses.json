@@ -1,0 +1,136 @@
+[
+  {
+    "language": "en",
+    "answers": {
+      "age": "other",
+      "location": "europe",
+      "gender": "male",
+      "education": "high-school",
+      "religious-background": "sunni-islam",
+      "religious-commitment": "fully-committed",
+      "family-support": "yes",
+      "reason-for-leaving": "scientific-reasons"
+    },
+    "submittedAt": "2025-08-23T19:13:05.721Z",
+    "id": "1755976385724"
+  },
+  {
+    "language": "en",
+    "answers": {
+      "age": "18-25",
+      "location": "europe",
+      "gender": "female",
+      "education": "master",
+      "religious-background": "sunni-islam",
+      "religious-commitment": "fully-committed",
+      "family-support": "yes",
+      "reason-for-leaving": "scientific-reasons"
+    },
+    "submittedAt": "2025-08-23T19:22:11.340Z",
+    "id": "1755976931344"
+  },
+  {
+    "language": "ar",
+    "answers": {
+      "belief": "atheist",
+      "age": "18-28",
+      "location": "morocco",
+      "gender": "male",
+      "education": "no-education",
+      "religious-background": "islam",
+      "religious-commitment": "moderate",
+      "family-support": "no",
+      "reason-for-leaving": "personal",
+      "additional-thoughts": "ةى"
+    },
+    "submittedAt": "2025-08-25T17:25:44.540Z",
+    "id": "1756142744543"
+  },
+  {
+    "language": "en",
+    "answers": {
+      "belief": "atheist",
+      "age": "18-28",
+      "location": "morocco",
+      "gender": "male",
+      "education": "no-education",
+      "religious-background": "islam",
+      "religious-commitment": "extremist",
+      "family-support": "no",
+      "reason-for-leaving": "personal",
+      "additional-thoughts": "ll"
+    },
+    "submittedAt": "2025-08-26T23:52:41.424Z",
+    "id": "1756252361430"
+  },
+  {
+    "language": "en",
+    "answers": {
+      "belief": "atheist",
+      "age": "18-28",
+      "location": "abroad",
+      "gender": "female",
+      "education": "high-school",
+      "religious-background": "other-religion",
+      "religious-commitment": "extremist",
+      "family-support": "yes",
+      "reason-for-leaving": "personal",
+      "additional-thoughts": "ituuub"
+    },
+    "submittedAt": "2025-08-27T00:00:35.436Z",
+    "id": "1756252835443"
+  },
+  {
+    "language": "ar",
+    "answers": {
+      "belief": "atheist",
+      "age": "-17",
+      "location": "abroad",
+      "gender": "female",
+      "education": "high-school",
+      "religious-background": "islam",
+      "religious-commitment": "moderate",
+      "family-support": "no",
+      "reason-for-leaving": "personal",
+      "additional-thoughts": "guys <3"
+    },
+    "submittedAt": "2025-08-27T00:04:43.245Z",
+    "id": "1756253083268"
+  },
+  {
+    "language": "en",
+    "answers": {
+      "belief": "atheist",
+      "age": "-17",
+      "location": "abroad",
+      "gender": "male",
+      "education": "no-education",
+      "religious-background": "islam",
+      "religious-commitment": "extremist",
+      "family-support": "yes",
+      "reason-for-leaving": "scientific",
+      "additional-thoughts": "فاشىن"
+    },
+    "submittedAt": "2025-08-28T01:28:49.618Z",
+    "id": "1756344529623"
+  },
+  {
+    "language": "en",
+    "answers": {
+      "belief": [
+        "atheist"
+      ],
+      "age": "-17",
+      "location": "abroad",
+      "gender": "male",
+      "education": "no-education",
+      "religious-background": "islam",
+      "religious-commitment": "extremist",
+      "family-support": "no",
+      "reason-for-leaving": "personal",
+      "additional-thoughts": "thank you broos"
+    },
+    "submittedAt": "2025-08-28T23:41:17.210Z",
+    "id": "1756424477281"
+  }
+]

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استبيان الملاحدة المغاربة - ملاحيدة المغرب | استطلاع شامل حول الإلحاد في المغرب</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="استبيان شامل للملاحدة المغاربة - شارك في الاستطلاع السري حول الإلحاد واللادينية في المغرب. إحصائيات وبيانات الملاحدة المغاربة مع الحفاظ على السرية التامة. استطلاع رأي الملاحدة في المغرب.">
+    <meta name="keywords" content="kafr, elhad, atheist, malhid, malhidoun, malhida, malhida maghribiya, Malhidoun Maroc, Malhida Amazigh, Amazigh atheist chat, Malhida online, kafr w elhad, atheist Maroc, darija atheist chat, qubsat Maroc, Hicham Nostic quotes, shno ra2y elhad f Morocco, debate atheist darija, bladi atheist chat, online malhidoun discussion, darija philosophy chat, atheist discussion Maroc, Moroccan atheist forum, Hicham Nostic quotes w qubsat, Darija online debate, Morocco disbelief discussion, online atheist Morocco, religion vs atheism darija, spiritual doubt Morocco, online discussion dial malhidoun maghrib, chatt w discussion dial atheists f Morocco, kifach tkon malhid f Morocco, forum dial malhidoun f Morocco, bladi malhida w atheism chat, debate w qubsat f darija w Amazigh, استبيان ملاحدة، استطلاع رأي، ملاحدة مغاربة، الإلحاد المغربي، إحصائيات ملاحدة، لادينيين المغرب، استبيان سري، تصويت ملاحدة">
+    <meta name="author" content="Wisdom Circle - دائرة الحكمة">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Arabic">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="استبيان الملاحدة المغاربة - ملاحيدة المغرب">
+    <meta property="og:description" content="استبيان شامل للملاحدة المغاربة - شارك في الاستطلاع السري حول الإلحاد واللادينية في المغرب مع الحفاظ على السرية التامة.">
+    <meta property="og:image" content="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
+    <meta property="og:url" content="https://www.malahida.com/survey">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ملاحيدة المغرب">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="استبيان الملاحدة المغاربة - ملاحيدة المغرب">
+    <meta name="twitter:description" content="استبيان شامل للملاحدة المغاربة - شارك في الاستطلاع السري حول الإلحاد واللادينية في المغرب.">
+    <meta name="twitter:image" content="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.2) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15), 0 0 0 1px rgba(255,255,255,0.2);
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+            transform: translateX(-100%);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        .language-selection {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .language-selection h2 {
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        .language-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .lang-btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 150px;
+        }
+
+        .lang-btn.arabic {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+        }
+
+        .lang-btn.english {
+            background: linear-gradient(135deg, #4834d4 0%, #686de0 100%);
+            color: white;
+            box-shadow: 0 8px 25px rgba(72, 52, 212, 0.3);
+        }
+
+        .lang-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .survey-content {
+            display: none;
+            padding: 40px;
+        }
+
+        .survey-content.active {
+            display: block;
+        }
+
+        .progress-container {
+            margin-bottom: 30px;
+        }
+
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .question-counter {
+            font-weight: 600;
+            color: #667eea;
+            background: rgba(102, 126, 234, 0.1);
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 50%, #ffa726 100%);
+            border-radius: 6px;
+            transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 0%;
+            box-shadow: 0 0 20px rgba(255, 107, 107, 0.4);
+            position: relative;
+        }
+
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            animation: progressShine 2s infinite;
+        }
+
+        @keyframes progressShine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .question-container {
+            margin-bottom: 40px;
+        }
+
+        .question-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            line-height: 1.4;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .question-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: center;
+            padding: 18px 24px;
+            border: 2px solid rgba(102, 126, 234, 0.2);
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            color: #2c3e50;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .option-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .option-item:hover {
+            border-color: #667eea;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .option-item:hover::before {
+            left: 100%;
+        }
+
+        .option-item.selected {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .option-item input[type="radio"] {
+            margin-right: 15px;
+            margin-left: 0;
+            width: 22px;
+            height: 22px;
+            accent-color: #667eea;
+            filter: drop-shadow(0 2px 4px rgba(102, 126, 234, 0.3));
+        }
+
+        .option-item label {
+            flex: 1;
+            font-size: 1rem;
+            cursor: pointer;
+            color: inherit;
+        }
+
+        .custom-input {
+            width: 100%;
+            padding: 12px 18px;
+            border: 2px solid rgba(102, 126, 234, 0.3);
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: 1rem;
+            display: none;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            color: #2c3e50;
+            transition: all 0.3s ease;
+        }
+
+        .custom-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.2);
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .textarea-container {
+            margin-top: 20px;
+        }
+
+        .textarea-input {
+            width: 100%;
+            min-height: 140px;
+            padding: 18px;
+            border: 2px solid rgba(102, 126, 234, 0.3);
+            border-radius: 15px;
+            font-size: 1rem;
+            font-family: inherit;
+            resize: vertical;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            color: #2c3e50;
+        }
+
+        .textarea-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 25px rgba(102, 126, 234, 0.2);
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(102, 126, 234, 0.2);
+        }
+
+        .nav-btn {
+            padding: 12px 25px;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 100px;
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: #333 !important;
+            color: #666 !important;
+            border-color: #444 !important;
+        }
+
+        .nav-btn.prev {
+            background: rgba(255, 255, 255, 0.8);
+            color: #667eea;
+            border: 2px solid rgba(102, 126, 234, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-btn.prev:hover:not(:disabled) {
+            background: rgba(102, 126, 234, 0.1);
+            border-color: #667eea;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+        }
+
+        .nav-btn.next, .nav-btn.submit {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: 2px solid #667eea;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .nav-btn.next:hover:not(:disabled), .nav-btn.submit:hover:not(:disabled) {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* RTL Support */
+        [dir="rtl"] .option-item input[type="radio"] {
+            margin-right: 0;
+            margin-left: 15px;
+        }
+
+        /* English Layout */
+        [dir="ltr"] {
+            text-align: left;
+        }
+
+        [dir="ltr"] .option-item input[type="radio"] {
+            margin-right: 15px;
+            margin-left: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            .header {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .survey-content, .language-selection {
+                padding: 20px;
+            }
+
+            .language-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .lang-btn {
+                width: 100%;
+                max-width: 250px;
+            }
+
+            .question-title {
+                font-size: 1.1rem;
+            }
+
+            .navigation {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="surveyTitle">استبيان شامل حول اللادينية في المغرب  </h1>
+            <p id="surveyDescription">مشاركتك مهمة وسرية تماماً</p>
+        </div>
+
+        <div id="languageSelection" class="language-selection">
+            <h2>اختر اللغة / Choose Language</h2>
+            <div class="language-buttons">
+                <button class="lang-btn arabic" onclick="selectLanguage('ar')">العربية</button>
+                <button class="lang-btn english" onclick="selectLanguage('en')">English</button>
+            </div>
+        </div>
+
+        <div id="surveyContent" class="survey-content">
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span class="question-counter">
+                        <span id="currentQuestion">1</span> / <span id="totalQuestions">10</span>
+                    </span>
+                </div>
+                <div class="progress-bar">
+                    <div id="progressFill" class="progress-fill"></div>
+                </div>
+            </div>
+
+            <div id="questionContainer" class="question-container">
+                <!-- Questions will be dynamically inserted here -->
+            </div>
+
+            <div class="navigation">
+                <button id="prevBtn" class="nav-btn prev" onclick="previousQuestion()">السابق</button>
+                <div>
+                    <button id="nextBtn" class="nav-btn next" onclick="nextQuestion()">التالي</button>
+                    <button id="submitBtn" class="nav-btn submit hidden" onclick="submitSurvey()">إرسال</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <style>
+        .kofi-floating-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 9999;
+            background-color: #ff38b8;
+            color: #fff;
+            padding: 18px 32px;
+            border-radius: 35px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(255, 56, 184, 0.3);
+            transition: all 0.3s ease;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            min-width: 200px;
+            text-align: center;
+        }
+        .kofi-floating-btn:hover {
+            background-color: #e6329f;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(255, 56, 184, 0.4);
+            color: #fff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .kofi-floating-btn {
+                bottom: 15px;
+                left: 15px;
+                padding: 16px 28px;
+                font-size: 16px;
+                min-width: 180px;
+            }
+        }
+    </style>
+    <a href="https://ko-fi.com/wisdom1" target="_blank" class="kofi-floating-btn">
+        الصينية💲DONATION
+    </a>
+
+    <script src="survey.js"></script>
+</body>
+</html>

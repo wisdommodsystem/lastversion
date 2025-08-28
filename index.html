@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    
+    <!-- iOS Specific Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Moroccan Atheist Voting">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- iOS Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
+    
+    <!-- iOS Splash Screen -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-startup-image" href="https://i.postimg.cc/DwbKWkQ8/image.png">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="موقع ملاحيدة المغرب للتصويت والدردشة - مجتمع الملاحدة المغاربة للنقاش بالدارجة والأمازيغية. منتدى مفتوح للحوار حول الإلحاد والفلسفة في المغرب مع اقتباسات هشام نوستيك وقبسات فكرية. انضم للنقاش الآمن والسري للملاحدة المغاربة أونلاين.">
+    <meta name="keywords" content="kafr, elhad, atheist, malhid, malhidoun, malhida, malhida maghribiya, Malhidoun Maroc, Malhida Amazigh, Amazigh atheist chat, Malhida online, kafr w elhad, atheist Maroc, darija atheist chat, qubsat Maroc, Hicham Nostic quotes, shno ra2y elhad f Morocco, debate atheist darija, bladi atheist chat, online malhidoun discussion, darija philosophy chat, atheist discussion Maroc, Moroccan atheist forum, Hicham Nostic quotes w qubsat, Darija online debate, Morocco disbelief discussion, online atheist Morocco, religion vs atheism darija, spiritual doubt Morocco, online discussion dial malhidoun maghrib, chatt w discussion dial atheists f Morocco, kifach tkon malhid f Morocco, forum dial malhidoun f Morocco, bladi malhida w atheism chat, debate w qubsat f darija w Amazigh, ملاحدة مغاربة، الإلحاد المغربي، نقد الدين، نقد الأديان، كفار مغاربة، malahida, mol7id, mala7ida, hicham noustik, kafer maghribi, كافر مغربي, taboo, طابوهات، لادينيين المغرب، حرية الفكر، نقد الخرافة، الفلسفة، المثلية، atheist morocco, moroccan atheists, religion criticism, freethought, wisdom circle, دائرة الحكمة، voting, تصويت، إحصائيات، statistics, morocco, المغرب, maghrib, secular, علماني, rationalism, عقلانية, skepticism, شك, agnostic, لاأدري, humanist, إنساني, freethinker, مفكر حر">
+    <meta name="author" content="Wisdom Circle - دائرة الحكمة">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Arabic">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="🇲🇦 MOROCCAN ATHEIST VOTING ✨ - موقع الملاحدة المغاربة">
+    <meta property="og:description" content="موقع ملاحيدة المغرب للتصويت والدردشة - مجتمع الملاحدة المغاربة للنقاش بالدارجة والأمازيغية. منتدى مفتوح للحوار حول الإلحاد والفلسفة في المغرب مع اقتباسات هشام نوستيك وقبسات فكرية.">
+    <meta property="og:image" content="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
+    <meta property="og:url" content="https://moroccan-atheist-voting.vercel.app">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Wisdom Circle - دائرة الحكمة">
+    <meta property="og:locale" content="ar_MA">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="🇲🇦 MOROCCAN ATHEIST VOTING ✨ - موقع الملاحدة المغاربة">
+    <meta name="twitter:description" content="موقع ملاحيدة المغرب للتصويت والدردشة - مجتمع الملاحدة المغاربة للنقاش بالدارجة والأمازيغية. منتدى مفتوح للحوار حول الإلحاد والفلسفة في المغرب.">
+    <meta name="twitter:image" content="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="https://i.postimg.cc/DwbKWkQ8/image.png">
+    
+    <title>🇲🇦 MOROCCAN ATHEIST VOTING ✨ - موقع الملاحدة المغاربة | 🌟 Wisdom Circle ⭕ 🔮</title>
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
+    <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
+    <link rel="canonical" href="https://moroccan-atheist-voting.vercel.app">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "🇲🇦 MOROCCAN ATHEIST VOTING ✨ - موقع الملاحدة المغاربة",
+        "alternateName": "Wisdom Circle - دائرة الحكمة",
+        "url": "https://moroccan-atheist-voting.vercel.app",
+        "description": "موقع للملاحدة المغاربة للتصويت وإحصاء اللادينيين في المغرب بكامل السرية. سيرفر ⭕️Wisdom Circle⭕️ فضاء حواري مفتوح لمناقشة الأفكار والمواضيع بحرية تامة، يجمع شخصيات من الفلسفة والفن ونقد الخرافة لنقاشات ثرية تعزز الفهم وتوسع آفاق التفكير.",
+        "inLanguage": "ar-MA",
+        "author": {
+            "@type": "Organization",
+            "name": "Wisdom Circle - دائرة الحكمة"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Wisdom Circle - دائرة الحكمة",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://i.postimg.cc/DwbKWkQ8/image.png"
+            }
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://moroccan-atheist-voting.vercel.app/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "keywords": "ملاحدة مغاربة، الإلحاد المغربي، نقد الدين، نقد الأديان، كفار مغاربة، malahida, mol7id, mala7ida, hicham noustik, kafer maghribi, كافر مغربي, taboo, طابوهات، لادينيين المغرب، حرية الفكر، نقد الخرافة، الفلسفة، المثلية، atheist morocco, moroccan atheists, religion criticism, freethought, wisdom circle, دائرة الحكمة، voting, تصويت، إحصائيات، statistics, morocco, المغرب, maghrib, secular, علماني, rationalism, عقلانية, skepticism, شك, agnostic, لاأدري, humanist, إنساني, freethinker, مفكر حر"
+    }
+    </script>
+    
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://i.postimg.cc">
+    <link rel="dns-prefetch" href="https://img.youtube.com">
+    
+    <!-- Critical CSS - Load First -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Non-Critical CSS - Load Asynchronously -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+    
+    <!-- Fonts with display=swap for better performance -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"></noscript>
+</head>
+<body>
+    
+    <!-- Disclaimer Modal -->
+    <div id="disclaimerModal" class="modal">
+        <div class="modal-content">
+            <h2>إخلاء مسؤولية</h2>
+            <div class="modal-body">
+                <p>هذا الموقع لغرض إحصائي بحت لمعرفة عدد الأشخاص الذين يعرّفون أنفسهم كـ"لادينيين" في المغرب.</p>
+                <p>لا يحمل أي نوايا تبشيرية أو دعوة لاعتناق أو ترك أي معتقد.</p>
+                <p>المعلومات المجمعة مجهولة المصدر تماماً ولا يتم جمع أي بيانات شخصية.</p>
+            </div>
+            <button id="acceptDisclaimer" class="btn primary-btn">عارف اصاط ✔</button>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <a href="#" class="logo">
+                        <img src="https://i.postimg.cc/kXhqhjd8/782620d680e784687c8cb465fdb0420a-removebg-preview.png" alt="علم المغرب" class="morocco-flag" style="width: 30px; height: 20px; margin-right: 8px; vertical-align: middle;">
+                        <div class="logo-icon">🧠</div>
+                        <div class="logo-text"> Moroccan Atheist Community</div>
+                    </a>
+                    <p class="subtitle"> by wisdom circle ⭕ </p>
+                </div>
+                <div class="header-right">
+                    <div class="header-nav">
+                        <a href="#" class="nav-link" id="headerAboutBtn">About Us</a>
+                        <a href="#" class="nav-link" id="headerPrivacyBtn">Privacy</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@wisdomcircle1?_t=ZS-8yxr2Gf1uAj&_r=1" target="_blank" class="social-btn tiktok" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://youtube.com/@wisdom_circle0?si=iA8DtfQj5y6y7RHm" target="_blank" class="social-btn youtube" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/wisdom_circle0?igsh=aXFyam5iMWl2ZzZ0" target="_blank" class="social-btn instagram" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://discord.gg/r3HGHr6HCW" target="_blank" class="social-btn discord" title="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Title Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <img src="https://i.postimg.cc/kXhqhjd8/782620d680e784687c8cb465fdb0420a-removebg-preview.png" alt="علم المغرب" class="hero-morocco-flag" style="width: 60px; height: 40px; margin-bottom: 10px;">
+            </div>
+            <h1 class="main-title"> MOROCCAN ATHEIST COMMUNITY </h1>
+            <p class="hero-subtitle"> BY WISDOM CIRCLE ⭕ </p>
+            <div class="global-counter">
+                <div class="counter-container">
+                    <div class="counter-header">
+                        <span class="counter-label">NON RELIGIOUS</span>
+                        <span class="live-indicator">
+                            <span class="live-dot"></span>
+                            <span class="live-text">LIVE</span>
+                        </span>
+                    </div>
+                    <span id="globalCounter" class="counter-number">Loading...</span>
+                    <p class="counter-description">Real-time count</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Action Section -->
+            <section class="hero-action-section">
+                <div class="hero-description">
+                    <h2 class="section-title">انضم إلى مجتمعنا</h2>
+                    <p class="section-subtitle">شارك في الإحصاء أو ابدأ محادثة مع أعضاء المجتمع</p>
+                </div>
+                
+                <!-- Primary Action Buttons -->
+                <div class="primary-actions">
+                    <button class="primary-action-btn get-started-btn" id="getStartedBtn">
+                        <div class="btn-content">
+                            <i class="fas fa-chart-bar"></i>
+                            <div class="btn-text">
+                                <span class="btn-title">GET STARTED</span>
+                                <span class="btn-subtitle">ابدأ الإحصاء</span>
+                            </div>
+                        </div>
+                    </button>
+                    
+                    <button class="primary-action-btn chat-btn" id="chatBtn">
+                        <div class="btn-content">
+                            <i class="fas fa-comments"></i>
+                            <div class="btn-text">
+                                <span class="btn-title">AJI NHDRO</span>
+                                <span class="btn-subtitle">تعال نتكلم</span>
+                            </div>
+                        </div>
+                    </button>
+                    
+                    <button class="primary-action-btn hedra-btn" id="hedraBtn">
+                        <div class="btn-content">
+                            <i class="fas fa-newspaper"></i>
+                            <div class="btn-text">
+                                <span class="btn-title">L'HEDRA - منشورات</span>
+                                <span class="btn-subtitle">اقرأ المقالات</span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                
+                <!-- Secondary Actions -->
+                <div class="secondary-actions">
+                    <button class="secondary-action-btn" id="aboutBtn">
+                        <i class="fas fa-info-circle"></i>
+                        <span>معلومات عنا</span>
+                    </button>
+                    <button class="secondary-action-btn" id="privacyBtn">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>الخصوصية</span>
+                    </button>
+                </div>
+            </section>
+                
+                <!-- Modal Overlays -->
+                <div class="modal-overlay" id="aboutModal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>About Us</h3>
+                            <button class="modal-close" data-modal="aboutModal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Welcome to our platform, created by <strong>Apollo Belvedere (Mazigh Apollo)</strong> and initiated by <strong>Wisdom Circle ⭕</strong>.</p>
+                            
+                            <p>This website was established to <strong>document the number of non-religious individuals in Morocco</strong>, not just as numbers, but as a voice for everyone who feels part of this diverse community. Our aim is to show that we are <strong>not a silent minority</strong>, but a group of individuals who think freely and seek understanding and respectful dialogue.</p>
+                            
+                            <p><strong>Our mission</strong> goes beyond statistics; we strive to <strong>build a cohesive non-religious community in Morocco</strong>, a space where everyone feels included, safe, and respected. We envision this platform as a <strong>hub for communication, expression, and inspiration</strong>, where anyone can share their thoughts and experiences with confidence.</p>
+                            
+                            <p>We believe that <strong>data tells our story, and knowledge opens doors for change</strong>. This project is just the beginning of our journey toward an aware community, where every voice is heard and every experience valued.</p>
+                            
+                            <p>Join us, and be part of a <strong>movement toward awareness, dialogue, and positive change</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-overlay" id="privacyModal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Privacy & Security</h3>
+                            <button class="modal-close" data-modal="privacyModal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>We want to assure all our visitors that this website is <strong>100% safe and secure</strong>.</p>
+                            <p>We <strong>do not require any login, personal information, or data</strong> from you.</p>
+                            <p>Your privacy is our top priority, and all interactions on this platform are <strong>completely anonymous</strong>.</p>
+                            <p>Feel free to explore, participate, and share without any concerns—your information is <strong>never collected, stored, or shared</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </section>
+        </div>
+
+        <!-- YouTube Videos Section -->
+        <section class="youtube-videos-section">
+            <div class="container">
+                <h2 class="videos-title">مقاطع فيديو مختارة</h2>
+                <div class="videos-grid">
+                    <div class="video-card" data-url="https://youtu.be/B9tc11pr3KA?si=-GHy5E83SyLy5r-p">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/B9tc11pr3KA/maxresdefault.jpg" alt="دردشة مع عزوز ريتشارد عن الفضائيين">
+                            <div class="play-overlay">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>دردشة مع عزوز ريتشارد عن الفضائيين</h3>
+                            <p>مناقشة شيقة حول الحياة خارج كوكب الأرض</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card" data-url="https://youtu.be/dwJYWh8h8gs?si=mG-YsD72x30s9IO1">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/dwJYWh8h8gs/maxresdefault.jpg" alt="قبسات من عودة الرسول">
+                            <div class="play-overlay">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>قبسات من عودة الرسول</h3>
+                            <p>سلسلة ساخرة عن عودة الرسول  </p>
+                        </div>
+                    </div>
+
+                    <div class="video-card" data-url="https://youtu.be/QLdM6yX-I50?si=Hlu_UrVMGlmMpTmA">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/QLdM6yX-I50/maxresdefault.jpg" alt="دردشة مع مازن المرتد">
+                            <div class="play-overlay">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>دردشة مع مازن المرتد</h3>
+                            <p>حوار مفتوح حول التجارب الشخصية</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card" data-url="https://youtu.be/dRsHoIyUc7Q?si=o37bTjLQXxwGssH0">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/dRsHoIyUc7Q/maxresdefault.jpg" alt="دردشة مع اللورد يتمجد">
+                            <div class="play-overlay">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>دردشة مع اللورد يتمجد</h3>
+                            <p>مناقشة عميقة حول مواضيع متنوعة</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card" data-url="https://youtu.be/9IyWoEWMn5s?si=t_HrAYEphgUggg8c">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/9IyWoEWMn5s/maxresdefault.jpg" alt="دردشة مع moroccan supernova عن الكون و الفيزياء و الفلك">
+                            <div class="play-overlay">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>دردشة مع moroccan supernova</h3>
+                            <p>عن الكون و الفيزياء و الفلك</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card" data-url="https://youtu.be/gNptwGToaFk?si=oZUQ4cX9HYRN4ts7">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/gNptwGToaFk/maxresdefault.jpg" alt="دردشة مع سموان الدهري بين الالحاد و نقد الخرافة">
+                            <div class="play-overlay">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>دردشة مع سموان الدهري</h3>
+                            <p>بين الالحاد و نقد الخرافة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Language Selection Modal -->
+        <div class="modal" id="languageModal">
+            <div class="modal-content language-modal">
+                <div class="modal-header">
+                    <h2>Choose Your Language / اختر لغتك</h2>
+                    <button class="close-btn" id="closeLangModal">&times;</button>
+                </div>
+                <div class="language-buttons">
+                    <button class="lang-btn" data-lang="ar">
+                        <i class="fas fa-globe"></i>
+                        العربية
+                    </button>
+                    <button class="lang-btn" data-lang="en">
+                        <i class="fas fa-globe"></i>
+                        English
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Survey Modal -->
+        <div class="modal" id="surveyModal">
+            <div class="modal-content survey-modal">
+                <div class="modal-header">
+                    <h2 id="surveyTitle">نموذج أسئلة إحصاء عدد اللادينيين في المغرب</h2>
+                    <button class="close-btn" id="closeSurveyModal">&times;</button>
+                </div>
+                <form id="surveyForm" class="survey-form">
+                    <!-- Questions will be populated by JavaScript -->
+                    <div id="surveyQuestions"></div>
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn" id="submitSurvey">إرسال الاستبيان</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Discord Popup -->
+    <div id="discordPopup" class="discord-popup">
+        <div class="discord-popup-content">
+            <button class="discord-close-btn" id="closeDiscordPopup">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="discord-icon">
+                <i class="fab fa-discord"></i>
+            </div>
+            <h3>انضم إلى مجتمعنا</h3>
+            <p>للدردشة والتواصل مع اللادينين</p>
+            <a href="https://discord.gg/r3HGHr6HCW" target="_blank" class="discord-join-btn">
+                <i class="fab fa-discord"></i>
+                انضم الآن
+            </a>
+        </div>
+    </div>
+
+    <!-- Wisdom Team Section -->
+    <section class="wisdom-team">
+        <div class="team-container">
+            <h2 class="team-title">Wisdom Circle Team</h2>
+            <div class="team-members">
+                <a href="https://discord.gg/r3HGHr6HCW" target="_blank" class="team-member-link">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://i.postimg.cc/C1mGZxNy/4d169b54880ae61cba30abe02385d757.webp" alt="Apollo Belvedere" loading="lazy">
+                        </div>
+                        <h3 class="member-name">Apollo Belvedere</h3>
+                    </div>
+                </a>
+                <a href="https://discord.gg/r3HGHr6HCW" target="_blank" class="team-member-link">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://i.postimg.cc/VLGz7Q7Y/a-18e1b009539b27ee97fa584b9a7dda7b.gif" alt="dada lkbire" loading="lazy">
+                        </div>
+                        <h3 class="member-name">dada lkbir</h3>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 MOROCCAN ATHIEST VOTING - BY WISDOM CIRCLE ⭕. All rights reserved.</p>
+        </div>
+    </footer>
+
+</div>
+
+
+
+    <!-- Thank You Modal -->
+    <div class="modal-overlay" id="thankYouModal" style="display: none;">
+        <div class="modal-container thank-you-modal">
+            <div class="floating-emojis">
+                <div class="floating-emoji">✨</div>
+                <div class="floating-emoji">🌟</div>
+                <div class="floating-emoji">💫</div>
+            </div>
+            <div class="thank-you-header">
+                <div class="thank-you-icon">🎉</div>
+                <h2 class="thank-you-title">شكراً لك!</h2>
+            </div>
+            <div class="thank-you-body">
+                <div class="thank-you-message">
+                    <p>تم إرسال إجابتك بنجاح! شكراً لمشاركتك معنا.</p>
+                    <small>مساهمتك تساعدنا في تحسين خدماتنا</small>
+                </div>
+            </div>
+            <div class="thank-you-footer">
+                <div class="thank-you-buttons">
+                    <button class="share-btn" onclick="shareWebsite()">
+                        <span class="btn-text" id="shareButtonText">🔗 شارك الموقع</span>
+                    </button>
+                    <button class="thank-you-btn" onclick="closeThankYouModal()">
+                        <span class="btn-text" id="closeButtonText">✅ رائع!</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Button -->
+    <div class="admin-button-container">
+        <button id="adminBtn" class="admin-btn">
+            <span class="admin-text">By APOllo Mazigh</span>
+            <span class="admin-heart">❤</span>
+        </button>
+    </div>
+
+
+
+    <!-- Advanced Notification Container -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <!-- Performance Optimization for JavaScript -->
+    <script>
+        // Preload critical resources
+        const preloadResources = [
+            'https://i.postimg.cc/DwbKWkQ8/image.png',
+            'https://img.youtube.com/vi/9IyWoEWMn5s/mqdefault.jpg',
+            'https://img.youtube.com/vi/gNptwGToaFk/mqdefault.jpg',
+            'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg',
+            'https://img.youtube.com/vi/abc123/mqdefault.jpg'
+        ];
+        
+        // Lazy load images when they come into viewport
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                            observer.unobserve(img);
+                        }
+                    }
+                });
+            });
+            
+            // Observe all images with data-src attribute
+            document.addEventListener('DOMContentLoaded', () => {
+                const lazyImages = document.querySelectorAll('img[data-src]');
+                lazyImages.forEach(img => imageObserver.observe(img));
+            });
+        }
+        
+        // Service Worker for caching (if supported)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                // Register service worker for caching (optional)
+                // navigator.serviceWorker.register('/sw.js');
+            });
+        }
+    </script>
+    
+
+    
+    <!-- Load main JavaScript with defer for better performance -->
+    <script src="script.js" defer></script>
+    
+    <!-- Google Analytics or other tracking scripts can go here -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> -->
+    
+    <!-- Ko-fi Donation Button -->
+    <style>
+        .kofi-floating-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 9999;
+            background-color: #ff38b8;
+            color: #fff;
+            padding: 16px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(255, 56, 184, 0.3);
+            transition: all 0.3s ease;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            min-width: 180px;
+            text-align: center;
+        }
+        .kofi-floating-btn:hover {
+            background-color: #e6329f;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(255, 56, 184, 0.4);
+            color: #fff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .kofi-floating-btn {
+                bottom: 15px;
+                left: 15px;
+                padding: 14px 24px;
+                font-size: 15px;
+                min-width: 160px;
+            }
+        }
+    </style>
+    <a href="https://ko-fi.com/wisdom1" target="_blank" class="kofi-floating-btn">
+        الصينية💲 DONATION
+    </a>
+    
+</body>
+</html>

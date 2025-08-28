@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدردشة الجماعية - ملاحيدة المغرب | دردشة الملاحدة بالدارجة والأمازيغية</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="دردشة جماعية للملاحدة المغاربة - انضم للنقاش بالدارجة والأمازيغية. منتدى آمن للحوار حول الإلحاد والفلسفة في المغرب مع اقتباسات هشام نوستيك وقبسات فكرية. دردشة مباشرة للملاحدة أونلاين.">
+    <meta name="keywords" content="kafr, elhad, atheist, malhid, malhidoun, malhida, malhida maghribiya, Malhidoun Maroc, Malhida Amazigh, Amazigh atheist chat, Malhida online, kafr w elhad, atheist Maroc, darija atheist chat, qubsat Maroc, Hicham Nostic quotes, shno ra2y elhad f Morocco, debate atheist darija, bladi atheist chat, online malhidoun discussion, darija philosophy chat, atheist discussion Maroc, Moroccan atheist forum, Hicham Nostic quotes w qubsat, Darija online debate, Morocco disbelief discussion, online atheist Morocco, religion vs atheism darija, spiritual doubt Morocco, online discussion dial malhidoun maghrib, chatt w discussion dial atheists f Morocco, kifach tkon malhid f Morocco, forum dial malhidoun f Morocco, bladi malhida w atheism chat, debate w qubsat f darija w Amazigh, دردشة ملاحدة، دردشة جماعية، ملاحدة مغاربة، الإلحاد المغربي، نقد الدين، دردشة بالدارجة، دردشة أمازيغية، منتدى ملاحدة، حوار فلسفي، نقاش حر">
+    <meta name="author" content="Wisdom Circle - دائرة الحكمة">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Arabic">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="دردشة الملاحدة المغاربة - ملاحيدة المغرب">
+    <meta property="og:description" content="دردشة جماعية للملاحدة المغاربة - انضم للنقاش بالدارجة والأمازيغية. منتدى آمن للحوار حول الإلحاد والفلسفة في المغرب.">
+    <meta property="og:image" content="https://i.postimg.cc/1XNHntrn/image.png">
+    <meta property="og:url" content="https://www.malahida.com/chat">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ملاحيدة المغرب">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="دردشة الملاحدة المغاربة - ملاحيدة المغرب">
+    <meta name="twitter:description" content="دردشة جماعية للملاحدة المغاربة - انضم للنقاش بالدارجة والأمازيغية.">
+    <meta name="twitter:image" content="https://i.postimg.cc/1XNHntrn/image.png">
+    
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/1XNHntrn/image.png">
+    <link rel="shortcut icon" href="https://i.postimg.cc/1XNHntrn/image.png">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/1XNHntrn/image.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1 class="main-title">WISDOM CIRCLE</h1>
+                        <p class="subtitle">دائرة الحكمة</p>
+                    </div>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="social-links">
+                        <a href="https://discord.gg/your-discord" class="social-btn discord" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://youtube.com/@your-channel" class="social-btn youtube" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://instagram.com/your-account" class="social-btn instagram" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    
+                    <button class="rules-btn" id="rulesBtn">
+                        <i class="fas fa-gavel"></i>
+                        <span>القوانين</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Chat Container -->
+    <main class="chat-main">
+        <div class="container">
+            <!-- Welcome Screen -->
+            <div class="welcome-screen" id="welcomeScreen">
+                <div class="welcome-card">
+                    <div class="welcome-header">
+                        <div class="welcome-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h2>مرحباً بك في الدردشة الجماعية</h2>
+                        <p>انضم إلى المحادثة واستمتع بالتفاعل مع الآخرين</p>
+                        <div class="welcome-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>مجتمع نشط</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>بيئة آمنة</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-clock"></i>
+                                <span>متاح 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="join-form" id="joinForm">
+                        <div class="form-group">
+                            <label for="nickname">ختار ازين شي سمية:</label>
+                            <input type="text" id="nickname" name="nickname" placeholder="أدخل اسم المستخدم" required maxlength="20">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>اختر الجنس:</label>
+                            <div class="gender-options">
+                                <label class="gender-option">
+                                    <input type="radio" name="gender" value="male" required>
+                                    <span class="gender-label">
+                                        <i class="fas fa-mars"></i>
+                                        ذكر
+                                    </span>
+                                </label>
+                                <label class="gender-option">
+                                    <input type="radio" name="gender" value="female" required>
+                                    <span class="gender-label">
+                                        <i class="fas fa-venus"></i>
+                                        أنثى
+                                    </span>
+                                </label>
+                                <label class="gender-option">
+                                    <input type="radio" name="gender" value="other" required>
+                                    <span class="gender-label">
+                                        <i class="fas fa-genderless"></i>
+                                        آخر
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="join-btn">
+                            <i class="fas fa-sign-in-alt"></i>
+                            دخول الدردشة
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Chat Interface -->
+            <div class="chat-interface" id="chatInterface" style="display: none;">
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <div class="chat-info">
+                            <i class="fas fa-users"></i>
+                            <span>الدردشة الجماعية</span>
+                            <span class="online-count" id="onlineCount">0 متصل</span>
+                        </div>
+                        <button class="leave-btn" id="leaveBtn">
+                            <i class="fas fa-sign-out-alt"></i>
+                            مغادرة
+                        </button>
+                    </div>
+                    
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- Messages will be displayed here -->
+                    </div>
+                    
+                    <div class="chat-input-container">
+                        <form class="chat-form" id="chatForm">
+                            <div class="input-group">
+
+                                <input type="text" id="messageInput" placeholder="اكتب رسالتك هنا..." maxlength="500" required>
+                                <button type="submit" class="send-btn">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rules Modal -->
+    <div class="modal" id="rulesModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-gavel"></i> قوانين الدردشة</h3>
+                <button class="close-btn" id="closeRulesModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="rules-list">
+                    <div class="rule-item">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p><strong>تحذير مهم:</strong> غير مسموح استغلال الأشخاص أو التلاعب بهم بأي شكل من الأشكال.</p>
+                    </div>
+                    <div class="rule-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <p><strong>المسؤولية الشخصية:</strong> أي شيء تقوم به في هذه الدردشة هو تحت مسؤوليتك الشخصية الكاملة.</p>
+                    </div>
+                    <div class="rule-item">
+                        <i class="fas fa-heart"></i>
+                        <p><strong>الاحترام المتبادل:</strong> يجب احترام جميع المشاركين والتعامل بأدب ولطف.</p>
+                    </div>
+                    <div class="rule-item">
+                        <i class="fas fa-ban"></i>
+                        <p><strong>المحتوى المحظور:</strong> ممنوع نشر محتوى مسيء أو غير لائق أو يحتوي على عنف.</p>
+                    </div>
+                    <div class="rule-item">
+                        <i class="fas fa-user-secret"></i>
+                        <p><strong>الخصوصية:</strong> لا تشارك معلومات شخصية حساسة في الدردشة العامة.</p>
+                    </div>
+                    <div class="rule-item">
+                        <i class="fas fa-balance-scale"></i>
+                        <p><strong>العدالة:</strong> نحن نحتفظ بالحق في إزالة أي مستخدم يخالف هذه القوانين.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Discord Popup -->
+    <div id="discordPopup" class="discord-popup">
+        <div class="discord-popup-content">
+            <button class="discord-close-btn" id="closeDiscordPopup">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="discord-icon">
+                <i class="fab fa-discord"></i>
+            </div>
+            <h3>انضم إلى مجتمعنا!</h3>
+            <p>تواصل مع الملاحدة المغاربة في ديسكورد للمحادثات الأعمق والنقاشات المتقدمة</p>
+            <a href="https://discord.gg/r3HGHr6HCW" target="_blank" class="discord-join-btn">
+                <i class="fab fa-discord"></i>
+                انضم الآن
+            </a>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+    
+    <!-- Ko-fi Donation Button -->
+    <style>
+        .kofi-floating-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 9999;
+            background-color: #ff38b8;
+            color: #fff;
+            padding: 16px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(255, 56, 184, 0.3);
+            transition: all 0.3s ease;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            min-width: 180px;
+            text-align: center;
+        }
+        .kofi-floating-btn:hover {
+            background-color: #e6329f;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(255, 56, 184, 0.4);
+            color: #fff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .kofi-floating-btn {
+                bottom: 15px;
+                left: 15px;
+                padding: 14px 24px;
+                font-size: 15px;
+                min-width: 160px;
+            }
+        }
+    </style>
+    <a href="https://ko-fi.com/wisdom1" target="_blank" class="kofi-floating-btn">
+        الصينية💲DONATION
+    </a>
+</body>
+</html>
