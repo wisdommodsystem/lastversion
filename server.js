@@ -212,7 +212,7 @@ const surveyResponseSchema = new mongoose.Schema({
   },
   answers: {
     type: Map,
-    of: String,
+    of: mongoose.Schema.Types.Mixed, // Support both strings and arrays for multiple selections
     required: true
   },
   submittedAt: {
