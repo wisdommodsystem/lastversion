@@ -521,6 +521,39 @@
         </div>
     </main>
 
+    <script>
+        // Password protection system using server verification
+        function checkAuthentication() {
+            const isAuthenticated = sessionStorage.getItem('adminAuthenticated');
+            if (!isAuthenticated) {
+                // Redirect to login page instead of showing modal
+                window.location.href = 'login.html';
+                return false;
+            }
+            return true;
+        }
+
+
+
+        // Check authentication on page load
+         document.addEventListener('DOMContentLoaded', function() {
+             if (!checkAuthentication()) {
+                 document.body.style.display = 'none';
+             } else {
+                 // Show content and load admin data if already authenticated
+                 document.body.style.display = 'block';
+                 if (typeof loadPosts === 'function') {
+                     loadPosts();
+                 }
+                 if (typeof updateStats === 'function') {
+                     updateStats();
+                 }
+             }
+         });
+
+        // Hide content initially
+        document.body.style.display = 'none';
+    </script>
     <script src="admin.js"></script>
 </body>
 </html>
