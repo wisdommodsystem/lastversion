@@ -258,33 +258,8 @@ function openWriteModal() {
 
 // Admin access function with advanced security
 function accessAdmin() {
-    const password = prompt('أدخل كلمة مرور الإدارة:');
-    
-    if (!password) {
-        return; // User cancelled
-    }
-    
-    // Send password to server for verification
-    fetch('/api/admin/verify', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ password: password })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            // Redirect to admin panel
-            window.location.href = '/admin.html';
-        } else {
-            alert('كلمة المرور غير صحيحة!');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('حدث خطأ في التحقق من كلمة المرور');
-    });
+    // Redirect to login page
+    window.location.href = '/login.html';
 }
 
 function closeWriteModal() {
