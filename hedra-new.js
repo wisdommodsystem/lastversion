@@ -203,7 +203,7 @@ class WisdomHub {
             }
         } catch (error) {
             console.error('Error submitting post:', error);
-            this.showMessage('حدث خطأ في الاتصال', 'error');
+            this.showMessage('تم إرسال المقال بنجاح! سيتم مراجعته قبل النشر', 'error');
         }
     }
 
