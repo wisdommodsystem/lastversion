@@ -938,7 +938,120 @@
     <script src="hedra-new.js"></script>
     
     <!-- Ko-fi Donation Button -->
+    <!-- Support Popup -->
     <style>
+        .support-popup {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 10000;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 300px;
+            font-family: 'Arial', sans-serif;
+            animation: slideIn 0.5s ease-out;
+        }
+        
+        .support-popup h3 {
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .support-popup p {
+            margin: 0 0 20px 0;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: right;
+        }
+        
+        .support-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .support-btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .support-btn.primary {
+            background-color: #ff6b6b;
+            color: white;
+        }
+        
+        .support-btn.primary:hover {
+            background-color: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+        }
+        
+        .support-btn.secondary {
+            background-color: #4ecdc4;
+            color: white;
+        }
+        
+        .support-btn.secondary:hover {
+            background-color: #26d0ce;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(78, 205, 196, 0.4);
+        }
+        
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .close-popup:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50%) translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(-50%) translateX(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .support-popup {
+                right: 10px;
+                left: 10px;
+                max-width: none;
+                top: 20px;
+                transform: none;
+            }
+        }
+        
         .kofi-floating-btn {
             position: fixed;
             bottom: 20px;
@@ -975,6 +1088,42 @@
             }
         }
     </style>
+    
+    <!-- Support Popup HTML -->
+    <div class="support-popup" id="supportPopup">
+        <button class="close-popup" onclick="closeSupportPopup()">×</button>
+        <h3>دعم الموقع</h3>
+        <p>الا بغيتي دعم الموقع باش يخلص المصارف ديالو كاين زر DONATION - الصينية او اذا بغيتي دعم بطريقة غير مباشرة اضغط على زر: دعم الموقع و كمل على الاقل عرض واحد</p>
+        <div class="support-buttons">
+            <a href="https://www.revenuecpmgate.com/ydmuwqr84?key=7b4a07157290c7115967ee5d12eb5eaf" target="_blank" class="support-btn primary">دعم الموقع</a>
+            <a href="https://ko-fi.com/wisdom1" target="_blank" class="support-btn secondary">الصينية💲 DONATION</a>
+        </div>
+    </div>
+    
+    <script>
+        // Show popup after 3 seconds
+        setTimeout(() => {
+            const popup = document.getElementById('supportPopup');
+            if (popup && !localStorage.getItem('supportPopupClosed')) {
+                popup.style.display = 'block';
+            }
+        }, 3000);
+        
+        function closeSupportPopup() {
+            const popup = document.getElementById('supportPopup');
+            popup.style.display = 'none';
+            localStorage.setItem('supportPopupClosed', 'true');
+        }
+        
+        // Auto-hide popup after 30 seconds if not closed
+        setTimeout(() => {
+            const popup = document.getElementById('supportPopup');
+            if (popup && popup.style.display !== 'none') {
+                closeSupportPopup();
+            }
+        }, 33000);
+    </script>
+    
     <a href="https://ko-fi.com/wisdom1" target="_blank" class="kofi-floating-btn">
         الصينية💲DONATION
     </a>
