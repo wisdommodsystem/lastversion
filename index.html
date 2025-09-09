@@ -85,659 +85,153 @@
         "keywords": "ملاحدة مغاربة، الإلحاد المغربي، نقد الدين، نقد الأديان، كفار مغاربة، malahida, mol7id, mala7ida, hicham noustik, kafer maghribi, كافر مغربي, taboo, طابوهات، لادينيين المغرب، حرية الفكر، نقد الخرافة، الفلسفة، المثلية، atheist morocco, moroccan atheists, religion criticism, freethought, wisdom circle, دائرة الحكمة، voting, تصويت، إحصائيات، statistics, morocco, المغرب, maghrib, secular, علماني, rationalism, عقلانية, skepticism, شك, agnostic, لاأدري, humanist, إنساني, freethinker, مفكر حر"
     }
     </script>
-    
-    <!-- Performance Optimization -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="https://i.postimg.cc">
-    <link rel="dns-prefetch" href="https://img.youtube.com">
-    
-    <!-- Critical CSS - Load First -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Non-Critical CSS - Load Asynchronously -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
-    
-    <!-- Fonts with display=swap for better performance -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"></noscript>
+  <!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تم إغلاق الموقع مؤقتًا</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1: #0f172a;
+      --bg2: #0b2545;
+      --accent: #7c3aed; /* violet */
+      --glass: rgba(255,255,255,0.06);
+      --card: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Cairo', sans-serif;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,0.12), transparent 10%),
+                  linear-gradient(120deg,var(--bg1),var(--bg2));
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;align-items:center;justify-content:center;padding:40px;
+    }
+    .container{
+      width:min(1000px,96%);
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:20px;
+      padding:36px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .top-orn{position:absolute;left:-120px;top:-120px;opacity:0.08;transform:rotate(25deg);}
+    h1{font-size:30px;margin:0 0 12px 0;font-weight:700;letter-spacing:0.6px}
+    p.lead{font-size:18px;line-height:1.7;margin:0 0 22px 0;color:#dbe9ff}
+    .card{background:var(--card);padding:22px;border-radius:14px;display:flex;gap:18px;align-items:center}
+    .logo{
+      width:92px;height:92px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);
+      display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:white;cursor:pointer;user-select:none;flex-shrink:0;box-shadow:0 8px 30px rgba(12,18,38,0.6);
+    }
+    .meta{flex:1}
+    .buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .btn{padding:10px 14px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.04);backdrop-filter: blur(6px);display:inline-flex;gap:10px;align-items:center;text-decoration:none;color:inherit;font-weight:600}
+    .btn svg{width:20px;height:20px;opacity:0.95}
+    .btn.youtube{background:linear-gradient(90deg,#ff4d4d,#ff704d);color:white}
+    .btn.discord{background:linear-gradient(90deg,#5865f2,#6b7bff);color:white}
+    .btn.insta{background:linear-gradient(90deg,#f58529,#dd2a7b);color:white}
+    footer{margin-top:18px;font-size:13px;color:#cbdcff;opacity:0.9}
+
+    /* hidden easter egg */
+    .easter{
+      position:absolute;right:18px;top:18px;background:linear-gradient(90deg,#0ea5a1,#7c3aed);padding:8px 12px;border-radius:999px;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(124,58,237,0.18);
+    }
+    .secret-panel{
+      position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:40px;pointer-events:none;opacity:0;transform:scale(0.98);
+      transition:all .35s cubic-bezier(.2,.9,.2,1);
+    }
+    .secret-panel.open{opacity:1;pointer-events:auto;transform:scale(1)}
+    .secret-box{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));padding:28px;border-radius:16px;max-width:720px;text-align:center;border:1px solid rgba(255,255,255,0.04)}
+    .secret-box h2{margin:0 0 10px 0;font-size:22px}
+    .secret-box p{margin:0 0 14px 0;color:#d8e9ff}
+    .secret-close{margin-top:12px;display:inline-block;padding:8px 12px;border-radius:10px;background:rgba(255,255,255,0.03);cursor:pointer}
+
+    /* responsive */
+    @media (max-width:720px){
+      h1{font-size:22px}
+      .logo{width:76px;height:76px;font-size:18px}
+      .container{padding:20px}
+    }
+  </style>
 </head>
 <body>
-    
-    <!-- Disclaimer Modal -->
-    <div id="disclaimerModal" class="modal">
-        <div class="modal-content">
-            <h2>إخلاء مسؤولية</h2>
-            <div class="modal-body">
-                <p>هذا الموقع لغرض إحصائي بحت لمعرفة عدد الأشخاص الذين يعرّفون أنفسهم كـ"لادينيين" في المغرب.</p>
-                <p>لا يحمل أي نوايا تبشيرية أو دعوة لاعتناق أو ترك أي معتقد.</p>
-                <p>المعلومات المجمعة مجهولة المصدر تماماً ولا يتم جمع أي بيانات شخصية.</p>
-            </div>
-            <button id="acceptDisclaimer" class="btn primary-btn">عارف اصاط ✔</button>
-        </div>
-    </div>
-    
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <a href="#" class="logo">
-                        <img src="https://i.postimg.cc/kXhqhjd8/782620d680e784687c8cb465fdb0420a-removebg-preview.png" alt="علم المغرب" class="morocco-flag" style="width: 30px; height: 20px; margin-right: 8px; vertical-align: middle;">
-                        <div class="logo-icon">🧠</div>
-                        <div class="logo-text"> Moroccan Atheist Community</div>
-                    </a>
-                    <p class="subtitle"> by wisdom circle ⭕ </p>
-                </div>
-                <div class="header-right">
-                    <div class="header-nav">
-                        <a href="#" class="nav-link" id="headerAboutBtn">About Us</a>
-                        <a href="#" class="nav-link" id="headerPrivacyBtn">Privacy</a>
-                    </div>
+  <div class="container" role="main" aria-labelledby="title">
+    <svg class="top-orn" width="520" height="520" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed" stop-opacity=".55"/><stop offset="1" stop-color="#06b6d4" stop-opacity=".55"/></linearGradient></defs>
+      <path fill="url(#g1)" d="M43.6,-63.8C56.1,-56.1,66.8,-45.1,72.9,-31.4C79.1,-17.8,80.7,-1.6,78.1,13.9C75.6,29.3,68.9,43.9,57.5,53.9C46,63.9,30,69.3,14.9,73C-0.3,76.6,-15.4,78.5,-28.7,73.9C-42,69.3,-53.6,58.2,-61.6,44.9C-69.6,31.6,-74.1,16.3,-77.1,0.1C-80.2,-16.1,-81.8,-32.2,-74.4,-44.6C-66.9,-57.1,-50.5,-65.1,-34.1,-69.9C-17.6,-74.7,-8.8,-76.4,4.1,-82.2C17,-88,34.1,-97.9,43.6,-63.8Z" transform="translate(100 100)"/>
+    </svg>
 
-                    <div class="social-links">
-                        <a href="https://www.tiktok.com/@wisdomcircle1?_t=ZS-8yxr2Gf1uAj&_r=1" target="_blank" class="social-btn tiktok" title="TikTok">
-                            <i class="fab fa-tiktok"></i>
-                        </a>
-                        <a href="https://youtube.com/@wisdom_circle0?si=iA8DtfQj5y6y7RHm" target="_blank" class="social-btn youtube" title="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="https://www.instagram.com/wisdom_circle0?igsh=aXFyam5iMWl2ZzZ0" target="_blank" class="social-btn instagram" title="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://discord.gg/r3HGHr6HCW" target="_blank" class="social-btn discord" title="Discord">
-                            <i class="fab fa-discord"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div class="card">
+      <div class="logo" id="logo" title="اضغط لسر صغير">W</div>
+      <div class="meta">
+        <h1 id="title">تم إغلاق الموقع مؤقتًا</h1>
+        <p class="lead">تم إغلاق الموقع مؤقتًا لأننا نعمل على الحصول على تراخيص من الدول العربية من أجل إجراء إحصاء عدد اللادينيين في دول شمال إفريقيا كاملة. نعتذر عن أي إزعاج وسنعود قريبًا بخدمات موثوقة وآمنة.</p>
 
-    <!-- Main Title Section -->
-    <section class="hero-section">
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 20px;">
-                <img src="https://i.postimg.cc/kXhqhjd8/782620d680e784687c8cb465fdb0420a-removebg-preview.png" alt="علم المغرب" class="hero-morocco-flag" style="width: 60px; height: 40px; margin-bottom: 10px;">
-            </div>
-            <h1 class="main-title"> MOROCCAN ATHEIST COMMUNITY </h1>
-            <p class="hero-subtitle"> BY WISDOM CIRCLE ⭕ </p>
-            <div class="global-counter">
-                <div class="counter-container">
-                    <div class="counter-header">
-                        <span class="counter-label">NON RELIGIOUS</span>
-                        <span class="live-indicator">
-                            <span class="live-dot"></span>
-                            <span class="live-text">LIVE</span>
-                        </span>
-                    </div>
-                    <span id="globalCounter" class="counter-number">Loading...</span>
-                    <p class="counter-description">Real-time count</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <div class="buttons" aria-label="روابط التواصل">
+          <a class="btn discord" href="https://discord.gg/r3HGHr6HCW" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60.5 4.5C55.6 2 50.3 0.8 45 0.9c-.6 1-1.3 2-1.9 2.9C34.5 2.3 23.5 3.8 12.5 10 9.6 14 8.2 18.8 8.6 23.6c5.1 3.7 10.2 6.7 15.9 8.7 1.3-.9 2.7-1.8 4.1-2.6.6 0 1.2.1 1.8.3 7.2 3.2 14.8 3.1 21.9-.2 1.6-.7 3.3-1.6 4.8-2.5-.2-8.3-4.6-15.3-10.1-19.8z" fill="white"/></svg>
+            انضم للديسكورد
+          </a>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <div class="container">
-            <!-- Hero Action Section -->
-            <section class="hero-action-section">
-                <div class="hero-description">
-                    <h2 class="section-title">انضم إلى مجتمعنا</h2>
-                    <p class="section-subtitle">شارك في الإحصاء أو ابدأ محادثة مع أعضاء المجتمع</p>
-                </div>
-                
-                <!-- Primary Action Buttons -->
-                <div class="primary-actions">
-                    <button class="primary-action-btn get-started-btn" id="getStartedBtn">
-                        <div class="btn-content">
-                            <i class="fas fa-chart-bar"></i>
-                            <div class="btn-text">
-                                <span class="btn-title">GET STARTED</span>
-                                <span class="btn-subtitle">ابدأ الإحصاء</span>
-                            </div>
-                        </div>
-                    </button>
-                    
-                    <button class="primary-action-btn chat-btn" id="chatBtn">
-                        <div class="btn-content">
-                            <i class="fas fa-comments"></i>
-                            <div class="btn-text">
-                                <span class="btn-title">AJI NHDRO</span>
-                                <span class="btn-subtitle">تعال نتكلم</span>
-                            </div>
-                        </div>
-                    </button>
-                    
-                    <button class="primary-action-btn hedra-btn" id="hedraBtn">
-                        <div class="btn-content">
-                            <i class="fas fa-newspaper"></i>
-                            <div class="btn-text">
-                                <span class="btn-title">L'HEDRA - منشورات</span>
-                                <span class="btn-subtitle">اقرأ المقالات</span>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-                
-                <!-- Secondary Actions -->
-                <div class="secondary-actions">
-                    <button class="secondary-action-btn" id="aboutBtn">
-                        <i class="fas fa-info-circle"></i>
-                        <span>معلومات عنا</span>
-                    </button>
-                    <button class="secondary-action-btn" id="privacyBtn">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>الخصوصية</span>
-                    </button>
-                </div>
-            </section>
-                
-                <!-- Modal Overlays -->
-                <div class="modal-overlay" id="aboutModal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3>About Us</h3>
-                            <button class="modal-close" data-modal="aboutModal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Welcome to our platform, created by <strong>Apollo Belvedere (Mazigh Apollo)</strong> and initiated by <strong>Wisdom Circle ⭕</strong>.</p>
-                            
-                            <p>This website was established to <strong>document the number of non-religious individuals in Morocco</strong>, not just as numbers, but as a voice for everyone who feels part of this diverse community. Our aim is to show that we are <strong>not a silent minority</strong>, but a group of individuals who think freely and seek understanding and respectful dialogue.</p>
-                            
-                            <p><strong>Our mission</strong> goes beyond statistics; we strive to <strong>build a cohesive non-religious community in Morocco</strong>, a space where everyone feels included, safe, and respected. We envision this platform as a <strong>hub for communication, expression, and inspiration</strong>, where anyone can share their thoughts and experiences with confidence.</p>
-                            
-                            <p>We believe that <strong>data tells our story, and knowledge opens doors for change</strong>. This project is just the beginning of our journey toward an aware community, where every voice is heard and every experience valued.</p>
-                            
-                            <p>Join us, and be part of a <strong>movement toward awareness, dialogue, and positive change</strong>.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="modal-overlay" id="privacyModal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3>Privacy & Security</h3>
-                            <button class="modal-close" data-modal="privacyModal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <p>We want to assure all our visitors that this website is <strong>100% safe and secure</strong>.</p>
-                            <p>We <strong>do not require any login, personal information, or data</strong> from you.</p>
-                            <p>Your privacy is our top priority, and all interactions on this platform are <strong>completely anonymous</strong>.</p>
-                            <p>Feel free to explore, participate, and share without any concerns—your information is <strong>never collected, stored, or shared</strong>.</p>
-                        </div>
-                    </div>
-                </div>
-                
+          <a class="btn youtube" href="https://www.youtube.com/@Wisdom_Circle0" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M23.5 6.2s-.2-1.7-.8-2.5c-.7-1.1-1.5-1.1-1.9-1.2C17.5 2 12 2 12 2s-5.6 0-8.7.5c-.4.1-1.2.1-1.9 1.2-.6.8-.8 2.5-.8 2.5S0 8 0 9.8v4.4C0 18 1.1 19.7 1.1 19.7c.7 1 1.6 1 2 .9 1.5-.1 6.4-.5 6.4-.5s5.5.1 8.3.6c.4.1 1.3.1 2-.9 0 0 1.1-1.6 1.1-4.5V9.8c0-1.8-.9-3.6-.9-3.6z" fill="white"/></svg>
+            قناة اليوتيوب
+          </a>
 
-            </section>
+          <a class="btn insta" href="https://www.instagram.com/wisdom_circle0" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.3a4 4 0 100 8 4 4 0 000-8zm4.8-3.2a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z" fill="white"/></svg>
+            انستغرام
+          </a>
         </div>
 
-        <!-- YouTube Videos Section -->
-        <section class="youtube-videos-section">
-            <div class="container">
-                <h2 class="videos-title">مقاطع فيديو مختارة</h2>
-                <div class="videos-grid">
-                    <div class="video-card" data-url="https://youtu.be/B9tc11pr3KA?si=-GHy5E83SyLy5r-p">
-                        <div class="video-thumbnail">
-                            <img src="https://img.youtube.com/vi/B9tc11pr3KA/maxresdefault.jpg" alt="دردشة مع عزوز ريتشارد عن الفضائيين">
-                            <div class="play-overlay">
-                                <i class="fab fa-youtube"></i>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <h3>دردشة مع عزوز ريتشارد عن الفضائيين</h3>
-                            <p>مناقشة شيقة حول الحياة خارج كوكب الأرض</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card" data-url="https://youtu.be/dwJYWh8h8gs?si=mG-YsD72x30s9IO1">
-                        <div class="video-thumbnail">
-                            <img src="https://img.youtube.com/vi/dwJYWh8h8gs/maxresdefault.jpg" alt="قبسات من عودة الرسول">
-                            <div class="play-overlay">
-                                <i class="fab fa-youtube"></i>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <h3>قبسات من عودة الرسول</h3>
-                            <p>سلسلة ساخرة عن عودة الرسول  </p>
-                        </div>
-                    </div>
-
-                    <div class="video-card" data-url="https://youtu.be/QLdM6yX-I50?si=Hlu_UrVMGlmMpTmA">
-                        <div class="video-thumbnail">
-                            <img src="https://img.youtube.com/vi/QLdM6yX-I50/maxresdefault.jpg" alt="دردشة مع مازن المرتد">
-                            <div class="play-overlay">
-                                <i class="fab fa-youtube"></i>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <h3>دردشة مع مازن المرتد</h3>
-                            <p>حوار مفتوح حول التجارب الشخصية</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card" data-url="https://youtu.be/dRsHoIyUc7Q?si=o37bTjLQXxwGssH0">
-                        <div class="video-thumbnail">
-                            <img src="https://img.youtube.com/vi/dRsHoIyUc7Q/maxresdefault.jpg" alt="دردشة مع اللورد يتمجد">
-                            <div class="play-overlay">
-                                <i class="fab fa-youtube"></i>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <h3>دردشة مع اللورد يتمجد</h3>
-                            <p>مناقشة عميقة حول مواضيع متنوعة</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card" data-url="https://youtu.be/9IyWoEWMn5s?si=t_HrAYEphgUggg8c">
-                        <div class="video-thumbnail">
-                            <img src="https://img.youtube.com/vi/9IyWoEWMn5s/maxresdefault.jpg" alt="دردشة مع moroccan supernova عن الكون و الفيزياء و الفلك">
-                            <div class="play-overlay">
-                                <i class="fab fa-youtube"></i>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <h3>دردشة مع moroccan supernova</h3>
-                            <p>عن الكون و الفيزياء و الفلك</p>
-                        </div>
-                    </div>
-
-                    <div class="video-card" data-url="https://youtu.be/gNptwGToaFk?si=oZUQ4cX9HYRN4ts7">
-                        <div class="video-thumbnail">
-                            <img src="https://img.youtube.com/vi/gNptwGToaFk/maxresdefault.jpg" alt="دردشة مع سموان الدهري بين الالحاد و نقد الخرافة">
-                            <div class="play-overlay">
-                                <i class="fab fa-youtube"></i>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <h3>دردشة مع سموان الدهري</h3>
-                            <p>بين الالحاد و نقد الخرافة</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Language Selection Modal -->
-        <div class="modal" id="languageModal">
-            <div class="modal-content language-modal">
-                <div class="modal-header">
-                    <h2>Choose Your Language / اختر لغتك</h2>
-                    <button class="close-btn" id="closeLangModal">&times;</button>
-                </div>
-                <div class="language-buttons">
-                    <button class="lang-btn" data-lang="ar">
-                        <i class="fas fa-globe"></i>
-                        العربية
-                    </button>
-                    <button class="lang-btn" data-lang="en">
-                        <i class="fas fa-globe"></i>
-                        English
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Survey Modal -->
-        <div class="modal" id="surveyModal">
-            <div class="modal-content survey-modal">
-                <div class="modal-header">
-                    <h2 id="surveyTitle">نموذج أسئلة إحصاء عدد اللادينيين في المغرب</h2>
-                    <button class="close-btn" id="closeSurveyModal">&times;</button>
-                </div>
-                <form id="surveyForm" class="survey-form">
-                    <!-- Questions will be populated by JavaScript -->
-                    <div id="surveyQuestions"></div>
-                    <div class="form-actions">
-                        <button type="submit" class="submit-btn" id="submitSurvey">إرسال الاستبيان</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </main>
-
-    <!-- Discord Popup -->
-    <div id="discordPopup" class="discord-popup">
-        <div class="discord-popup-content">
-            <button class="discord-close-btn" id="closeDiscordPopup">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="discord-icon">
-                <i class="fab fa-discord"></i>
-            </div>
-            <h3>انضم إلى مجتمعنا</h3>
-            <p>للدردشة والتواصل مع اللادينين</p>
-            <a href="https://discord.gg/r3HGHr6HCW" target="_blank" class="discord-join-btn">
-                <i class="fab fa-discord"></i>
-                انضم الآن
-            </a>
-        </div>
+        <footer>لمزيد من التفاصيل تابعنا على المنصات أو اتصل بنا عبر القنوات أعلاه.</footer>
+      </div>
     </div>
 
-    <!-- Wisdom Team Section -->
-    <section class="wisdom-team">
-        <div class="team-container">
-            <h2 class="team-title">Wisdom Circle Team</h2>
-            <div class="team-members">
-                <a href="https://discord.gg/r3HGHr6HCW" target="_blank" class="team-member-link">
-                    <div class="team-member">
-                        <div class="member-image">
-                            <img src="https://i.postimg.cc/C1mGZxNy/4d169b54880ae61cba30abe02385d757.webp" alt="Apollo Belvedere" loading="lazy">
-                        </div>
-                        <h3 class="member-name">Apollo Belvedere</h3>
-                    </div>
-                </a>
-                <a href="https://discord.gg/r3HGHr6HCW" target="_blank" class="team-member-link">
-                    <div class="team-member">
-                        <div class="member-image">
-                            <img src="https://i.postimg.cc/VLGz7Q7Y/a-18e1b009539b27ee97fa584b9a7dda7b.gif" alt="dada lkbire" loading="lazy">
-                        </div>
-                        <h3 class="member-name">dada lkbir</h3>
-                    </div>
-                </a>
+    <button class="easter" id="easterBtn" aria-expanded="false">سرّ</button>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 MOROCCAN ATHIEST VOTING - BY WISDOM CIRCLE ⭕. All rights reserved.</p>
-        </div>
-    </footer>
-
-</div>
-
-
-
-    <!-- Thank You Modal -->
-    <div class="modal-overlay" id="thankYouModal" style="display: none;">
-        <div class="modal-container thank-you-modal">
-            <div class="floating-emojis">
-                <div class="floating-emoji">✨</div>
-                <div class="floating-emoji">🌟</div>
-                <div class="floating-emoji">💫</div>
-            </div>
-            <div class="thank-you-header">
-                <div class="thank-you-icon">🎉</div>
-                <h2 class="thank-you-title">شكراً لك!</h2>
-            </div>
-            <div class="thank-you-body">
-                <div class="thank-you-message">
-                    <p>تم إرسال إجابتك بنجاح! شكراً لمشاركتك معنا.</p>
-                    <small>مساهمتك تساعدنا في تحسين خدماتنا</small>
-                </div>
-            </div>
-            <div class="thank-you-footer">
-                <div class="thank-you-buttons">
-                    <button class="share-btn" onclick="shareWebsite()">
-                        <span class="btn-text" id="shareButtonText">🔗 شارك الموقع</span>
-                    </button>
-                    <button class="thank-you-btn" onclick="closeThankYouModal()">
-                        <span class="btn-text" id="closeButtonText">✅ رائع!</span>
-                    </button>
-                </div>
-            </div>
-        </div>
+    <div class="secret-panel" id="secret">
+      <div class="secret-box" role="dialog" aria-modal="true" aria-labelledby="secretTitle">
+        <h2 id="secretTitle">مفاجأة صغيرة ✨</h2>
+        <p>شكراً لصبرك — أنت مشترك في قائمة انتظار خاصة. عند عودة الموقع سنبلغ المشتركين أولًا. (هذه رسالة خفية، يمكن إغلاقها بالضغط على زر الإخفاء أو على حرف H من لوحة المفاتيح)</p>
+        <div class="secret-close" id="secretClose" role="button">إغلاق</div>
+      </div>
     </div>
+  </div>
 
-    <!-- Admin Button -->
-    <div class="admin-button-container">
-        <button id="adminBtn" class="admin-btn">
-            <span class="admin-text">By APOllo Mazigh</span>
-            <span class="admin-heart">❤</span>
-        </button>
-    </div>
+  <script>
+    const logo = document.getElementById('logo');
+    const easterBtn = document.getElementById('easterBtn');
+    const secret = document.getElementById('secret');
+    const secretClose = document.getElementById('secretClose');
 
+    function toggleSecret(open){
+      secret.classList.toggle('open', open);
+      easterBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
 
+    logo.addEventListener('click', ()=> toggleSecret(true));
+    easterBtn.addEventListener('click', ()=> toggleSecret(true));
+    secretClose.addEventListener('click', ()=> toggleSecret(false));
 
-    <!-- Advanced Notification Container -->
-    <div class="notification-container" id="notificationContainer"></div>
+    // keyboard shortcut: press H to toggle the secret
+    document.addEventListener('keydown', (e)=>{
+      if(e.key.toLowerCase() === 'h'){
+        toggleSecret(!secret.classList.contains('open'));
+      }
+    });
 
-    <!-- Performance Optimization for JavaScript -->
-    <script>
-        // Preload critical resources
-        const preloadResources = [
-            'https://i.postimg.cc/DwbKWkQ8/image.png',
-            'https://img.youtube.com/vi/9IyWoEWMn5s/mqdefault.jpg',
-            'https://img.youtube.com/vi/gNptwGToaFk/mqdefault.jpg',
-            'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg',
-            'https://img.youtube.com/vi/abc123/mqdefault.jpg'
-        ];
-        
-        // Lazy load images when they come into viewport
-        if ('IntersectionObserver' in window) {
-            const imageObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        if (img.dataset.src) {
-                            img.src = img.dataset.src;
-                            img.removeAttribute('data-src');
-                            observer.unobserve(img);
-                        }
-                    }
-                });
-            });
-            
-            // Observe all images with data-src attribute
-            document.addEventListener('DOMContentLoaded', () => {
-                const lazyImages = document.querySelectorAll('img[data-src]');
-                lazyImages.forEach(img => imageObserver.observe(img));
-            });
-        }
-        
-        // Service Worker for caching (if supported)
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                // Register service worker for caching (optional)
-                // navigator.serviceWorker.register('/sw.js');
-            });
-        }
-    </script>
-    
-
-    
-    <!-- Load main JavaScript with defer for better performance -->
-    <script src="script.js" defer></script>
-    
-    <!-- Google Analytics or other tracking scripts can go here -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> -->
-    
-    <!-- Support Popup -->
-    <style>
-        .support-popup {
-            position: fixed;
-            top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
-            z-index: 10000;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #fff;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            max-width: 300px;
-            font-family: 'Arial', sans-serif;
-            animation: slideIn 0.5s ease-out;
-        }
-        
-        .support-popup h3 {
-            margin: 0 0 15px 0;
-            font-size: 18px;
-            text-align: center;
-            color: #fff;
-        }
-        
-        .support-popup p {
-            margin: 0 0 20px 0;
-            font-size: 14px;
-            line-height: 1.5;
-            text-align: right;
-        }
-        
-        .support-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        .support-btn {
-            padding: 12px 20px;
-            border: none;
-            border-radius: 8px;
-            font-weight: bold;
-            text-decoration: none;
-            text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            font-size: 14px;
-        }
-        
-        .support-btn.primary {
-            background-color: #ff6b6b;
-            color: white;
-        }
-        
-        .support-btn.primary:hover {
-            background-color: #ff5252;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
-        }
-        
-        .support-btn.secondary {
-            background-color: #4ecdc4;
-            color: white;
-        }
-        
-        .support-btn.secondary:hover {
-            background-color: #26d0ce;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(78, 205, 196, 0.4);
-        }
-        
-        .close-popup {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: rgba(255, 255, 255, 0.2);
-            border: none;
-            color: white;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .close-popup:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-        
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(-50%) translateX(100px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(-50%) translateX(0);
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .support-popup {
-                right: 10px;
-                left: 10px;
-                max-width: none;
-                top: 20px;
-                transform: none;
-            }
-        }
-        
-        .kofi-floating-btn {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            z-index: 9999;
-            background-color: #ff38b8;
-            color: #fff;
-            padding: 16px 28px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 4px 12px rgba(255, 56, 184, 0.3);
-            transition: all 0.3s ease;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            min-width: 180px;
-            text-align: center;
-        }
-        .kofi-floating-btn:hover {
-            background-color: #e6329f;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(255, 56, 184, 0.4);
-            color: #fff;
-            text-decoration: none;
-        }
-        @media (max-width: 768px) {
-            .kofi-floating-btn {
-                bottom: 15px;
-                left: 15px;
-                padding: 14px 24px;
-                font-size: 15px;
-                min-width: 160px;
-            }
-        }
-    </style>
-    
-    <!-- Support Popup HTML -->
-    <div class="support-popup" id="supportPopup">
-        <button class="close-popup" onclick="closeSupportPopup()">×</button>
-        <h3>دعم الموقع</h3>
-        <p>الا بغيتي دعم الموقع باش يخلص المصارف ديالو كاين زر DONATION - الصينية او اذا بغيتي دعم بطريقة غير مباشرة اضغط على زر: دعم الموقع و كمل على الاقل عرض واحد</p>
-        <div class="support-buttons">
-            <a href="https://smrturl.co/e697a5c" target="_blank" class="support-btn primary">دعم الموقع</a>
-            <a href="https://ko-fi.com/wisdom1" target="_blank" class="support-btn secondary">الصينية💲 DONATION</a>
-        </div>
-    </div>
-    
-    <script>
-        // Show popup after 3 seconds
-        setTimeout(() => {
-            const popup = document.getElementById('supportPopup');
-            if (popup && !localStorage.getItem('supportPopupClosed')) {
-                popup.style.display = 'block';
-            }
-        }, 3000);
-        
-        function closeSupportPopup() {
-            const popup = document.getElementById('supportPopup');
-            popup.style.display = 'none';
-            localStorage.setItem('supportPopupClosed', 'true');
-        }
-        
-        // Auto-hide popup after 30 seconds if not closed
-        setTimeout(() => {
-            const popup = document.getElementById('supportPopup');
-            if (popup && popup.style.display !== 'none') {
-                closeSupportPopup();
-            }
-        }, 33000);
-    </script>
-    
-    <a href="https://ko-fi.com/wisdom1" target="_blank" class="kofi-floating-btn">
-        الصينية💲 DONATION
-    </a>
-    
+    // small accessibility: close panel when clicking outside box
+    secret.addEventListener('click', (ev)=>{
+      if(ev.target === secret) toggleSecret(false);
+    });
+  </script>
 </body>
 </html>
