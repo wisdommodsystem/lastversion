@@ -1,260 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <meta name="theme-color" content="#000000">
-    
-    <!-- iOS Specific Meta Tags -->
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#111319" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Moroccan Atheist Voting">
     <meta name="format-detection" content="telephone=no">
     <meta name="mobile-web-app-capable" content="yes">
-    
-    <!-- iOS Touch Icons -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <title>🇲🇦 MOROCCAN ATHEIST VOTING ✨ - موقع الملاحدة المغاربة | 🌟 Wisdom Circle ⭕ 🔮</title>
+
+    <!-- Touch Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
     <link rel="apple-touch-icon" sizes="152x152" href="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
     <link rel="apple-touch-icon" sizes="120x120" href="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
     <link rel="apple-touch-icon" sizes="76x76" href="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
-    
-    <!-- iOS Splash Screen -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link rel="apple-touch-startup-image" href="https://i.postimg.cc/DwbKWkQ8/image.png">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="موقع ملاحيدة المغرب للتصويت والدردشة - مجتمع الملاحدة المغاربة للنقاش بالدارجة والأمازيغية. منتدى مفتوح للحوار حول الإلحاد والفلسفة في المغرب مع اقتباسات هشام نوستيك وقبسات فكرية. انضم للنقاش الآمن والسري للملاحدة المغاربة أونلاين.">
-    <meta name="keywords" content="kafr, elhad, atheist, malhid, malhidoun, malhida, malhida maghribiya, Malhidoun Maroc, Malhida Amazigh, Amazigh atheist chat, Malhida online, kafr w elhad, atheist Maroc, darija atheist chat, qubsat Maroc, Hicham Nostic quotes, shno ra2y elhad f Morocco, debate atheist darija, bladi atheist chat, online malhidoun discussion, darija philosophy chat, atheist discussion Maroc, Moroccan atheist forum, Hicham Nostic quotes w qubsat, Darija online debate, Morocco disbelief discussion, online atheist Morocco, religion vs atheism darija, spiritual doubt Morocco, online discussion dial malhidoun maghrib, chatt w discussion dial atheists f Morocco, kifach tkon malhid f Morocco, forum dial malhidoun f Morocco, bladi malhida w atheism chat, debate w qubsat f darija w Amazigh, ملاحدة مغاربة، الإلحاد المغربي، نقد الدين، نقد الأديان، كفار مغاربة، malahida, mol7id, mala7ida, hicham noustik, kafer maghribi, كافر مغربي, taboo, طابوهات، لادينيين المغرب، حرية الفكر، نقد الخرافة، الفلسفة، المثلية، atheist morocco, moroccan atheists, religion criticism, freethought, wisdom circle, دائرة الحكمة، voting, تصويت، إحصائيات، statistics, morocco, المغرب, maghrib, secular, علماني, rationalism, عقلانية, skepticism, شك, agnostic, لاأدري, humanist, إنساني, freethinker, مفكر حر">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
+    <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
+    <link rel="canonical" href="https://moroccan-atheist-voting.vercel.app">
+
+    <!-- SEO Meta -->
+    <meta name="description" content="موقع ملاحيدة المغرب للتصويت والدردشة - مجتمع الملاحدة المغاربة للنقاش بالدارجة والأمازيغية.">
+    <meta name="keywords" content="ملاحدة مغاربة، الإلحاد المغربي، نقد الدين، نقد الأديان، كفار مغاربة، atheist morocco, wisdom circle">
     <meta name="author" content="Wisdom Circle - دائرة الحكمة">
     <meta name="robots" content="index, follow">
     <meta name="language" content="Arabic">
     <meta name="revisit-after" content="7 days">
-    
-    <!-- Open Graph Meta Tags -->
+
+    <!-- OG Meta -->
     <meta property="og:title" content="🇲🇦 MOROCCAN ATHEIST VOTING ✨ - موقع الملاحدة المغاربة">
-    <meta property="og:description" content="موقع ملاحيدة المغرب للتصويت والدردشة - مجتمع الملاحدة المغاربة للنقاش بالدارجة والأمازيغية. منتدى مفتوح للحوار حول الإلحاد والفلسفة في المغرب مع اقتباسات هشام نوستيك وقبسات فكرية.">
+    <meta property="og:description" content="موقع ملاحيدة المغرب للتصويت والدردشة - مجتمع الملاحدة المغاربة للنقاش الحر.">
     <meta property="og:image" content="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
     <meta property="og:url" content="https://moroccan-atheist-voting.vercel.app">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Wisdom Circle - دائرة الحكمة">
     <meta property="og:locale" content="ar_MA">
-    
-    <!-- Twitter Card Meta Tags -->
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="🇲🇦 MOROCCAN ATHEIST VOTING ✨ - موقع الملاحدة المغاربة">
-    <meta name="twitter:description" content="موقع ملاحيدة المغرب للتصويت والدردشة - مجتمع الملاحدة المغاربة للنقاش بالدارجة والأمازيغية. منتدى مفتوح للحوار حول الإلحاد والفلسفة في المغرب.">
+    <meta name="twitter:description" content="موقع ملاحيدة المغرب للتصويت والدردشة - مجتمع الملاحدة المغاربة للنقاش بالدارجة والأمازيغية.">
     <meta name="twitter:image" content="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
-    
-    <!-- Additional SEO Meta Tags -->
-    <meta name="theme-color" content="#000000">
+
+    <!-- Windows -->
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="msapplication-TileImage" content="https://i.postimg.cc/DwbKWkQ8/image.png">
-    
-    <title>🇲🇦 MOROCCAN ATHEIST VOTING ✨ - موقع الملاحدة المغاربة | 🌟 Wisdom Circle ⭕ 🔮</title>
-    <link rel="icon" type="image/png" href="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
-    <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/xdPKWF3f/1755871493297.png">
-    <link rel="canonical" href="https://moroccan-atheist-voting.vercel.app">
-    
-    <!-- Structured Data (JSON-LD) -->
+
+    <!-- JSON-LD -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "🇲🇦 MOROCCAN ATHEIST VOTING ✨ - موقع الملاحدة المغاربة",
-        "alternateName": "Wisdom Circle - دائرة الحكمة",
-        "url": "https://moroccan-atheist-voting.vercel.app",
-        "description": "موقع للملاحدة المغاربة للتصويت وإحصاء اللادينيين في المغرب بكامل السرية. سيرفر ⭕️Wisdom Circle⭕️ فضاء حواري مفتوح لمناقشة الأفكار والمواضيع بحرية تامة، يجمع شخصيات من الفلسفة والفن ونقد الخرافة لنقاشات ثرية تعزز الفهم وتوسع آفاق التفكير.",
-        "inLanguage": "ar-MA",
-        "author": {
-            "@type": "Organization",
-            "name": "Wisdom Circle - دائرة الحكمة"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Wisdom Circle - دائرة الحكمة",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://i.postimg.cc/DwbKWkQ8/image.png"
-            }
-        },
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://moroccan-atheist-voting.vercel.app/?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        },
-        "keywords": "ملاحدة مغاربة، الإلحاد المغربي، نقد الدين، نقد الأديان، كفار مغاربة، malahida, mol7id, mala7ida, hicham noustik, kafer maghribi, كافر مغربي, taboo, طابوهات، لادينيين المغرب، حرية الفكر، نقد الخرافة، الفلسفة، المثلية، atheist morocco, moroccan atheists, religion criticism, freethought, wisdom circle, دائرة الحكمة، voting, تصويت، إحصائيات، statistics, morocco, المغرب, maghrib, secular, علماني, rationalism, عقلانية, skepticism, شك, agnostic, لاأدري, humanist, إنساني, freethinker, مفكر حر"
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "🇲🇦 MOROCCAN ATHEIST VOTING ✨ - موقع الملاحدة المغاربة",
+      "alternateName": "Wisdom Circle - دائرة الحكمة",
+      "url": "https://moroccan-atheist-voting.vercel.app",
+      "description": "موقع للملاحدة المغاربة للتصويت وإحصاء اللادينيين في المغرب بكامل السرية. سيرفر Wisdom Circle فضاء حواري حر.",
+      "inLanguage": "ar-MA",
+      "author": { "@type": "Organization", "name": "Wisdom Circle - دائرة الحكمة" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Wisdom Circle - دائرة الحكمة",
+        "logo": { "@type": "ImageObject", "url": "https://i.postimg.cc/DwbKWkQ8/image.png" }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://moroccan-atheist-voting.vercel.app/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
- $html = @'
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="dark light" />
-  <meta name="theme-color" content="#111319" />
-  <title>الموقع مُغلق مؤقتًا</title>
+    </script>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Fonts + Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --bg-1:#0f1220;
-      --bg-2:#0c0f1a;
-      --stroke:rgba(255,255,255,0.14);
-      --text:#e8ecf1;
-      --muted:#b7c0cc;
-      --accent-1:#6a5acd;
-      --accent-2:#18c3b1;
-      --discord:#5865F2;
-      --youtube:#ff0033;
-      --instagram:#E4405F;
-    }
-
-    * { box-sizing: border-box; }
-    html, body { height: 100%; margin: 0; }
-
-    body {
-      font-family: 'Tajawal', system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
-      color: var(--text);
-      background: radial-gradient(1000px 800px at 80% 10%, rgba(104,88,205,0.18), transparent 60%),
-                  radial-gradient(800px 600px at 20% 80%, rgba(24,195,177,0.16), transparent 60%),
-                  linear-gradient(120deg, var(--bg-1), var(--bg-2));
-      display: grid;
-      place-items: center;
-      min-height: 100svh;
-      overflow: hidden;
-    }
-
-    .gradient-veil {
-      position: fixed;
-      inset: -20vmax;
-      background: conic-gradient(from 30deg at 40% 50%, rgba(24,195,177,0.07), rgba(106,90,205,0.08), rgba(24,195,177,0.07));
-      filter: blur(80px) saturate(140%);
-      animation: swirl 26s linear infinite;
-      opacity: 0.8;
-      pointer-events: none;
-    }
-
-    @keyframes swirl {
-      0% { transform: rotate(0deg) scale(1); }
-      50% { transform: rotate(180deg) scale(1.05); }
-      100% { transform: rotate(360deg) scale(1); }
-    }
-
-    .orbs { position: fixed; inset: 0; pointer-events: none; }
-    .orbs span {
-      position: absolute;
-      width: 20vmin; height: 20vmin;
-      border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.12), rgba(255,255,255,0.02) 60%, transparent 70%);
-      filter: blur(6px);
-      animation: float 14s ease-in-out infinite;
-      mix-blend-mode: screen;
-    }
-    .orbs span:nth-child(1){ top:10%; right:8%; animation-duration:18s; }
-    .orbs span:nth-child(2){ bottom:12%; left:6%; animation-duration:22s; animation-delay:-4s; }
-    .orbs span:nth-child(3){ top:40%; left:40%; width:24vmin; height:24vmin; animation-duration:26s; animation-delay:-8s; }
-
-    @keyframes float {
-      0%,100% { transform: translateY(-8px); }
-      50% { transform: translateY(8px); }
-    }
-
-    .wrapper { width: min(100%, 1100px); padding: clamp(16px, 3vw, 32px); z-index: 1; }
-
-    .card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.05));
-      backdrop-filter: blur(14px);
-      border: 1px solid var(--stroke);
-      border-radius: 24px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
-      padding: clamp(20px, 5vw, 48px);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: .6rem;
-      font-size: .95rem;
-      color: var(--muted);
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.14);
-      padding: .4rem .8rem;
-      border-radius: 999px;
-    }
-
-    h1 {
-      margin: .8rem 0 .25rem;
-      font-size: clamp(1.8rem, 4vw, 3rem);
-      line-height: 1.2;
-    }
-
-    .lead {
-      margin: .6rem 0 1.2rem;
-      color: var(--muted);
-      font-size: clamp(1rem, 2.2vw, 1.25rem);
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 1.2rem;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: .7rem;
-      justify-content: center;
-      text-decoration: none;
-      color: #fff;
-      padding: .85rem 1.1rem;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,0.2);
-      background: rgba(255,255,255,0.08);
-      transition: transform .18s ease, box-shadow .18s ease, background .3s ease;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-    }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,0,0,0.35); }
-    .btn .icon { width: 20px; height: 20px; }
-
-    .btn.discord { background: color-mix(in oklab, var(--discord) 36%, transparent); }
-    .btn.youtube { background: color-mix(in oklab, var(--youtube) 36%, transparent); }
-    .btn.instagram { background: color-mix(in oklab, var(--instagram) 36%, transparent); }
-
-    .footer-note { margin-top: 1.3rem; color: var(--muted); font-size: .95rem; }
-
-    @media (max-width: 480px){ .btn { width: 100%; } }
-  </style>
-</head>
-<body>
-  <div class="gradient-veil"></div>
-  <div class="orbs"><span></span><span></span><span></span></div>
-
-  <main class="wrapper">
-    <section class="card">
-      <div class="badge">🚧 إشعار مهم</div>
-      <h1>تم إغلاق الموقع مؤقتًا</h1>
-      <p class="lead">
-        نعمل حاليًا على الحصول على تراخيص رسمية من الدول العربية
-        من أجل إطلاق مشروع بحثي لإحصاء عدد اللادينيين في شمال إفريقيا كاملة.
-      </p>
-
+    <style>
+      /* ========== نفس ستايل الصفحة لي درنا مع التأثيرات ========== */
+      :root{--bg-1:#0f1220;--bg-2:#0c0f1a;--stroke:rgba(255,255,255,0.14);--text:#e8ecf1;--muted:#b7c0cc;--discord:#5865F2;--youtube:#ff0033;--instagram:#E4405F;}
+      body{margin:0;font-family:'Tajawal',sans-serif;color:var(--text);background:linear-gradient(120deg,var(--bg-1),var(--bg-2));display:grid;place-items:center;min-height:100vh;overflow:hidden;}
+      .gradient-veil{position:fixed;inset:-20vmax;background:conic-gradient(from 30deg at 40% 50%,rgba(24,195,177,0.07),rgba(106,90,205,0.08));filter:blur(80px);animation:swirl 26s linear infinite;opacity:.8}
+      @keyframes swirl{0%{transform:rotate(0)}50%{transform:rotate(180deg)}100%{transform:rotate(360deg)}}
+      .card{background:rgba(255,255,255,0.06);backdrop-filter:blur(14px);border:1px solid var(--stroke);border-radius:20px;box-shadow:0 10px 40px rgba(0,0,0,0.35);padding:2rem;max-width:650px;text-align:center;}
+      h1{font-size:2rem;margin:0 0 1rem}
+      .lead{color:var(--muted);margin-bottom:1.5rem;font-size:1.1rem}
+      .links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+      .btn{padding:.75rem 1.2rem;border-radius:12px;text-decoration:none;color:white;transition:.2s;font-weight:500}
+      .btn.discord{background:var(--discord)}
+      .btn.youtube{background:var(--youtube)}
+      .btn.instagram{background:var(--instagram)}
+    </style>
+  </head>
+  <body>
+    <div class="gradient-veil"></div>
+    <main class="card">
+      <h1>🚧 تم إغلاق الموقع مؤقتًا 🚧</h1>
+      <p class="lead">نعمل حاليًا على الحصول على تراخيص رسمية من بعض الدول العربية من أجل إحصاء عدد اللادينيين في شمال إفريقيا. شكراً لصبركم.</p>
       <div class="links">
-        <a class="btn discord" href="https://discord.gg/r3HGHr6HCW" target="_blank" rel="noopener">ديسكورد</a>
-        <a class="btn youtube" href="https://www.youtube.com/@Wisdom_Circle0" target="_blank" rel="noopener">يوتيوب</a>
-        <a class="btn instagram" href="https://www.instagram.com/wisdom_circle0" target="_blank" rel="noopener">إنستغرام</a>
+        <a class="btn discord" href="https://discord.gg/r3HGHr6HCW" target="_blank">ديسكورد</a>
+        <a class="btn youtube" href="https://www.youtube.com/@Wisdom_Circle0" target="_blank">يوتيوب</a>
+        <a class="btn instagram" href="https://www.instagram.com/wisdom_circle0" target="_blank">إنستغرام</a>
       </div>
-
-      <p class="footer-note">نعتذر عن الإزعاج، ونشكركم على تفهّمكم واهتمامكم. سنعود قريبًا.</p>
-    </section>
-  </main>
-</body>
+    </main>
+  </body>
 </html>
-'@
-Set-Content -LiteralPath 'index.html' -Value $html -Encoding UTF8
