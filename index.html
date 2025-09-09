@@ -84,128 +84,177 @@
         },
         "keywords": "ملاحدة مغاربة، الإلحاد المغربي، نقد الدين، نقد الأديان، كفار مغاربة، malahida, mol7id, mala7ida, hicham noustik, kafer maghribi, كافر مغربي, taboo, طابوهات، لادينيين المغرب، حرية الفكر، نقد الخرافة، الفلسفة، المثلية، atheist morocco, moroccan atheists, religion criticism, freethought, wisdom circle, دائرة الحكمة، voting, تصويت، إحصائيات، statistics, morocco, المغرب, maghrib, secular, علماني, rationalism, عقلانية, skepticism, شك, agnostic, لاأدري, humanist, إنساني, freethinker, مفكر حر"
     }
-   <!DOCTYPE html>
+ $html = @'
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>إغلاق مؤقت - Wisdom Circle</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#111319" />
+  <title>الموقع مُغلق مؤقتًا</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    :root {
+      --bg-1:#0f1220;
+      --bg-2:#0c0f1a;
+      --stroke:rgba(255,255,255,0.14);
+      --text:#e8ecf1;
+      --muted:#b7c0cc;
+      --accent-1:#6a5acd;
+      --accent-2:#18c3b1;
+      --discord:#5865F2;
+      --youtube:#ff0033;
+      --instagram:#E4405F;
     }
 
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+
     body {
-      background: linear-gradient(135deg, #141e30, #243b55);
-      color: #fff;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      flex-direction: column;
+      font-family: 'Tajawal', system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      color: var(--text);
+      background: radial-gradient(1000px 800px at 80% 10%, rgba(104,88,205,0.18), transparent 60%),
+                  radial-gradient(800px 600px at 20% 80%, rgba(24,195,177,0.16), transparent 60%),
+                  linear-gradient(120deg, var(--bg-1), var(--bg-2));
+      display: grid;
+      place-items: center;
+      min-height: 100svh;
       overflow: hidden;
     }
 
-    .container {
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(12px);
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-      max-width: 700px;
-      animation: fadeIn 2s ease-in-out;
+    .gradient-veil {
+      position: fixed;
+      inset: -20vmax;
+      background: conic-gradient(from 30deg at 40% 50%, rgba(24,195,177,0.07), rgba(106,90,205,0.08), rgba(24,195,177,0.07));
+      filter: blur(80px) saturate(140%);
+      animation: swirl 26s linear infinite;
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    @keyframes swirl {
+      0% { transform: rotate(0deg) scale(1); }
+      50% { transform: rotate(180deg) scale(1.05); }
+      100% { transform: rotate(360deg) scale(1); }
+    }
+
+    .orbs { position: fixed; inset: 0; pointer-events: none; }
+    .orbs span {
+      position: absolute;
+      width: 20vmin; height: 20vmin;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.12), rgba(255,255,255,0.02) 60%, transparent 70%);
+      filter: blur(6px);
+      animation: float 14s ease-in-out infinite;
+      mix-blend-mode: screen;
+    }
+    .orbs span:nth-child(1){ top:10%; right:8%; animation-duration:18s; }
+    .orbs span:nth-child(2){ bottom:12%; left:6%; animation-duration:22s; animation-delay:-4s; }
+    .orbs span:nth-child(3){ top:40%; left:40%; width:24vmin; height:24vmin; animation-duration:26s; animation-delay:-8s; }
+
+    @keyframes float {
+      0%,100% { transform: translateY(-8px); }
+      50% { transform: translateY(8px); }
+    }
+
+    .wrapper { width: min(100%, 1100px); padding: clamp(16px, 3vw, 32px); z-index: 1; }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.05));
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--stroke);
+      border-radius: 24px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
+      padding: clamp(20px, 5vw, 48px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      font-size: .95rem;
+      color: var(--muted);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.14);
+      padding: .4rem .8rem;
+      border-radius: 999px;
     }
 
     h1 {
-      font-size: 2.2em;
-      margin-bottom: 15px;
-      color: #ffdd57;
-      animation: glow 2s ease-in-out infinite alternate;
+      margin: .8rem 0 .25rem;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.2;
     }
 
-    p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-      line-height: 1.8;
+    .lead {
+      margin: .6rem 0 1.2rem;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.2vw, 1.25rem);
     }
 
-    .btn-group a {
-      display: inline-block;
-      margin: 10px;
-      padding: 14px 28px;
-      border-radius: 30px;
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 1.2rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      justify-content: center;
       text-decoration: none;
-      font-size: 1.1em;
-      font-weight: bold;
-      transition: 0.3s;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      color: #fff;
+      padding: .85rem 1.1rem;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      transition: transform .18s ease, box-shadow .18s ease, background .3s ease;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
     }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,0,0,0.35); }
+    .btn .icon { width: 20px; height: 20px; }
 
-    .discord { background: #5865F2; color: white; }
-    .discord:hover { background: #4752c4; }
+    .btn.discord { background: color-mix(in oklab, var(--discord) 36%, transparent); }
+    .btn.youtube { background: color-mix(in oklab, var(--youtube) 36%, transparent); }
+    .btn.instagram { background: color-mix(in oklab, var(--instagram) 36%, transparent); }
 
-    .youtube { background: #FF0000; color: white; }
-    .youtube:hover { background: #cc0000; }
+    .footer-note { margin-top: 1.3rem; color: var(--muted); font-size: .95rem; }
 
-    .instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; }
-    .instagram:hover { opacity: 0.85; }
-
-    footer {
-      margin-top: 30px;
-      font-size: 0.9em;
-      color: #ccc;
-      opacity: 0.7;
-    }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 5px #ffdd57, 0 0 10px #ffdd57; }
-      to { text-shadow: 0 0 15px #ffdd57, 0 0 30px #ffdd57; }
-    }
-
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-
-    /* خفية (Easter Egg) */
-    .secret {
-      display: none;
-      margin-top: 20px;
-      font-size: 1em;
-      color: #ffdd57;
-      animation: glow 2s ease-in-out infinite alternate;
-    }
+    @media (max-width: 480px){ .btn { width: 100%; } }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🚧 الموقع مغلق مؤقتاً 🚧</h1>
-    <p>نحن نعمل حالياً على الحصول على التراخيص اللازمة من الدول العربية من أجل مشروع بحثي فريد: <br>
-      <strong>إحصاء عدد اللادينيين في شمال إفريقيا كاملة</strong>.<br>
-      ✨ نقدر صبركم واهتمامكم، ونعدكم أن العودة ستكون أقوى وأكثر تأثيراً. ✨
-    </p>
-    <div class="btn-group">
-      <a href="https://discord.gg/r3HGHr6HCW" class="discord" target="_blank">Discord</a>
-      <a href="https://www.youtube.com/@Wisdom_Circle0" class="youtube" target="_blank">YouTube</a>
-      <a href="https://www.instagram.com/wisdom_circle0" class="instagram" target="_blank">Instagram</a>
-    </div>
-    <div class="secret">🔥 شكراً لأنك من القلائل الذين اكتشفوا الرسالة الخفية! 🔥</div>
-    <footer>
-      &copy; 2025 Wisdom Circle — جميع الحقوق محفوظة.
-    </footer>
-  </div>
+  <div class="gradient-veil"></div>
+  <div class="orbs"><span></span><span></span><span></span></div>
 
-  <script>
-    // إظهار الخفية عند الضغط على H
-    document.addEventListener('keydown', (e) => {
-      if(e.key.toLowerCase() === 'h') {
-        document.querySelector('.secret').style.display = 'block';
-      }
-    });
-  </script>
+  <main class="wrapper">
+    <section class="card">
+      <div class="badge">🚧 إشعار مهم</div>
+      <h1>تم إغلاق الموقع مؤقتًا</h1>
+      <p class="lead">
+        نعمل حاليًا على الحصول على تراخيص رسمية من الدول العربية
+        من أجل إطلاق مشروع بحثي لإحصاء عدد اللادينيين في شمال إفريقيا كاملة.
+      </p>
+
+      <div class="links">
+        <a class="btn discord" href="https://discord.gg/r3HGHr6HCW" target="_blank" rel="noopener">ديسكورد</a>
+        <a class="btn youtube" href="https://www.youtube.com/@Wisdom_Circle0" target="_blank" rel="noopener">يوتيوب</a>
+        <a class="btn instagram" href="https://www.instagram.com/wisdom_circle0" target="_blank" rel="noopener">إنستغرام</a>
+      </div>
+
+      <p class="footer-note">نعتذر عن الإزعاج، ونشكركم على تفهّمكم واهتمامكم. سنعود قريبًا.</p>
+    </section>
+  </main>
 </body>
 </html>
+'@
+Set-Content -LiteralPath 'index.html' -Value $html -Encoding UTF8
